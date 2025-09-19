@@ -1,42 +1,75 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 62.5%;
+  --color-darkgray: #37353E;
+  --color-gray: #44444E;
+  --color-blue: #40E0D0;
+  --color-light: #D3DAD9;
+
+  --main-padding: 1.5rem;
+
+  color: var(--color-light);
+  background-color: var(--color-darkgray);
+}
+
+@media screen and (min-width: 750px) {
+  :root {
+    --main-padding: 3rem;
+  }
+}
+
 #root {
-  max-width: 1280px;
+    width: 100%;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: 1.6rem;
+  background-image: url("bg.png");
+  background-size: cover;
+  
+}
+
+.page-width {
+  max-width: 144rem;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: var(--main-padding);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a {
+  color: var(--color-light);
+  text-decoration: inherit;
+
+  padding: 1rem 1.8rem;
+  border-bottom: .3rem solid var(--color-light);
+  transition: 
+    background-color .8s, 
+    border-color .8s,
+    border-radius .8s,
+    color .8s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover,
+a:focus, a:focus-visible {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  border-radius: 1.5rem;
+  color: var(--color-darkgray);
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.container {
+  backdrop-filter: blur(.3rem);
 }
