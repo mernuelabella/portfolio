@@ -1,6 +1,6 @@
 .header {
     border-bottom: .5rem solid var(--color-gray);
-    backdrop-filter: blur(.3rem);
+    backdrop-filter: blur(.4rem);
 }
 
 .header__inner {
@@ -9,9 +9,15 @@
 }
 
 .header__logo-text {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     display: flex;
     text-shadow: var(--color-blue) 1px 5px 10px;
+}
+
+@media screen and (min-width: 990px) {
+    .header__logo-text {
+        font-size: 3.5rem;
+    }
 }
 
 .header__logo-text a {
@@ -41,10 +47,22 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 990px) {
+    .header__links ul {
+        gap: 3rem;
+    }
 }
 
 .header__links li {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     display: flex;
+}
+
+@media screen and (min-width: 990px) {
+    .header__links li {
+        font-size: 1.8rem;
+    }
 }
