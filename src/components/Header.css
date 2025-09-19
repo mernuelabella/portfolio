@@ -1,0 +1,50 @@
+.header {
+    border-bottom: .5rem solid var(--color-gray);
+    backdrop-filter: blur(.3rem);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-text {
+    font-size: 3.5rem;
+    display: flex;
+    text-shadow: var(--color-blue) 1px 5px 10px;
+}
+
+.header__logo-text a {
+    border: none;
+    padding: 1rem 1.8rem;
+}
+
+.header__logo-text a:hover,
+.header__logo-text a:focus,
+.header__logo-text a:focus-visible {
+    color: inherit;
+    background-color: transparent;
+}
+
+.header__logo-text a:focus,
+.header__logo-text a:focus-visible {
+    outline: .1rem solid var(--color-blue);
+    outline-offset: -.1rem;
+}
+
+.header__links {
+    margin-left: auto;
+}
+
+.header__links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+}
+
+.header__links li {
+    font-size: 1.8rem;
+    display: flex;
+}
