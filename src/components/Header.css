@@ -22,7 +22,13 @@
 
 .header__logo-text a {
     border: none;
-    padding: 1rem 1.8rem;
+    padding: .5rem 0;
+}
+
+@media screen and (min-width: 750px) {
+    .header__logo-text a {
+        padding: 1rem 1.8rem;
+    }
 }
 
 .header__logo-text a:hover,
