@@ -1,49 +1,48 @@
-.header__inner {
+.footer__inner {
     display: flex;
     align-items: center;
 }
 
-.header__logo-text {
-    font-size: 2.8rem;
+.footer__logo-text {
+    font-size: 1rem;
     display: flex;
-    text-shadow: var(--color-light) 1px 5px 10px;
 }
 
 @media screen and (min-width: 990px) {
-    .header__logo-text {
-        font-size: 3.5rem;
+    .footer__logo-text {
+        font-size: 1.8rem;
     }
 }
 
-.header__logo-text a {
+.footer__logo-text a {
     border: none;
     padding: .5rem 0;
 }
 
 @media screen and (min-width: 750px) {
-    .header__logo-text a {
+    .footer__logo-text a {
         padding: 1rem 0;
     }
 }
 
-.header__logo-text a:hover,
-.header__logo-text a:focus,
-.header__logo-text a:focus-visible {
+.footer__logo-text a:hover,
+.footer__logo-text a:focus,
+.footer__logo-text a:focus-visible {
     color: inherit;
     background-color: transparent;
 }
 
-.header__logo-text a:focus,
-.header__logo-text a:focus-visible {
+.footer__logo-text a:focus,
+.footer__logo-text a:focus-visible {
     outline: .1rem solid var(--color-light);
     outline-offset: -.1rem;
 }
 
-.header__links {
+.footer__links {
     margin-left: auto;
 }
 
-.header__links ul {
+.footer__links ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -52,18 +51,18 @@
 }
 
 @media screen and (min-width: 990px) {
-    .header__links ul {
+    .footer__links ul {
         gap: 3rem;
     }
 }
 
-.header__links li {
-    font-size: 1.3rem;
+.footer__links li {
+    font-size: 1rem;
     display: flex;
 }
 
 @media screen and (min-width: 990px) {
-    .header__links li {
-        font-size: 1.8rem;
+    .footer__links li {
+        font-size: 1.4rem;
     }
 }
